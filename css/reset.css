@@ -1,0 +1,59 @@
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+}
+
+body {
+	line-height: 1;
+    font-family: 'NanumSquareNeo'!important;
+    letter-spacing: -1px;
+    min-width: 320px;
+    
+}
+
+ol, ul {
+	list-style: none!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none!important;
+    color: #000!important;
+    display: block;
+    
+}
+h2,b{
+    font-weight: 800!important;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure{
+    margin: 0!important;
+}
