@@ -19,6 +19,7 @@
         transition: all 1s;
         &.active{
             background: #fff;
+            transition: background 1s;
         }
         
         &.fix{
