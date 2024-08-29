@@ -53,7 +53,6 @@ $(document).ready(function(){
 //swiper start
 $(document).ready(function(){
     //main visual slide
-    //�섎떒 �몃꽕��
     var screenWidth = $(window).width();
     var swiper = new Swiper(".product1", {
       slidesPerView: 6,
@@ -61,7 +60,6 @@ $(document).ready(function(){
       
     });
     
-    //�곷떒 諛깃렇�쇱슫��
     var swiper2 = new Swiper(".product2", {
       loop: true,
       effect:'fade',
@@ -81,17 +79,15 @@ $(document).ready(function(){
             swiper2.slideTo(slideIndex);
         },
         function () {
-            // �몃쾭 �앸궇 �� �꾨Т �숈옉 �� ��
+
         }
     );
 
     function updateSwiperBehavior() {
         if (screenWidth < 1024) {
-            // 1024px 諛묒씠硫� �몃쾭 鍮꾪솢�깊솕, �먮룞 �ъ깮 �쒖꽦��
             swiper.detachEvents();
             swiper2.autoplay.start();
         } else {
-            // 1024px �댁긽�대㈃ �몃쾭 �쒖꽦��, �먮룞 �ъ깮 鍮꾪솢�깊솕
             swiper.attachEvents();
             swiper2.autoplay.stop();
         }
@@ -113,6 +109,7 @@ $(document).ready(function(){
     //mobile menu 
     $('.hamburger-menu').click(function() {
       $(this).toggleClass('active');
+      $("#header").toggleClass('active');
     });
 
     
