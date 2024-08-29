@@ -1,0 +1,272 @@
+body {
+  font-family: "NanumSquareNeo" !important;
+  min-width: 320px;
+}
+
+#soln_wrap #header .navbar {
+  background: transparent !important;
+}
+#soln_wrap .main_video {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block !important;
+}
+#soln_wrap .main_video .main_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#soln_wrap .main_video .main_content::after {
+  content: "";
+  background: rgba(233, 233, 233, 0.2);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#soln_wrap .main_video .main_content .txt {
+  z-index: 10;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  width: 100%;
+  transform: translateY(-45%);
+}
+@media (max-width: 414px) {
+  #soln_wrap .main_video .main_content .txt {
+    top: 40%;
+    transform: translateY(-40%);
+  }
+}
+#soln_wrap .main_video .main_content .txt .slide_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#soln_wrap .main_video .main_content .txt .slide_box .title {
+  display: flex;
+}
+#soln_wrap .main_video .main_content .txt .slide_box .slide {
+  width: 90%;
+  height: 250px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 5;
+}
+#soln_wrap .main_video .main_content .txt .slide_box .slide .swiper {
+  width: 100%;
+  height: 100%;
+}
+#soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide img {
+  max-width: 100px;
+}
+@media (max-width: 1280px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide img {
+    max-width: 80px;
+  }
+}
+@media (max-width: 430px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide img {
+    max-width: 70px;
+  }
+}
+@media (max-width: 414px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide img {
+    max-width: 60px;
+  }
+}
+#soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide.last p {
+  font-size: 50px;
+  font-weight: 800;
+}
+@media (max-width: 1280px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide.last p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide.last p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 430px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide.last p {
+    font-size: 21px;
+  }
+}
+#soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide p {
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  display: block;
+  font-size: 35px;
+  color: #000;
+  padding: 0;
+  font-weight: 800;
+}
+@media (max-width: 1280px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 430px) {
+  #soln_wrap .main_video .main_content .txt .slide_box .slide .swiper .swiper-slide p {
+    font-size: 19px;
+  }
+}
+#soln_wrap .main_video .main_content .txt p {
+  display: block;
+  background: rgba(35, 35, 35, 0.5);
+  padding: 75px 65px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (max-width: 1600px) {
+  #soln_wrap .main_video .main_content .txt p {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1280px) {
+  #soln_wrap .main_video .main_content .txt p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  #soln_wrap .main_video .main_content .txt p {
+    font-size: 30px;
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 480px) {
+  #soln_wrap .main_video .main_content .txt p {
+    font-size: 25px;
+    padding: 50px 30px;
+  }
+}
+#soln_wrap .main_video .main_content .txt p .block_1024 {
+  display: none;
+}
+@media (max-width: 1024px) {
+  #soln_wrap .main_video .main_content .txt p .block_1024 {
+    display: block;
+  }
+}
+#soln_wrap .main_video .main_content .txt p .block_414 {
+  display: none;
+}
+@media (max-width: 414px) {
+  #soln_wrap .main_video .main_content .txt p .block_414 {
+    display: block;
+  }
+}
+#soln_wrap .main_video .main_content .txt small {
+  font-size: 24px;
+  font-weight: 400;
+  display: block;
+  margin: 20px 0 0;
+}
+@media (max-width: 1600px) {
+  #soln_wrap .main_video .main_content .txt small {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1280px) {
+  #soln_wrap .main_video .main_content .txt small {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #soln_wrap .main_video .main_content .txt small {
+    font-size: 15px;
+  }
+}
+#soln_wrap .scrollbar {
+  transform: translate(-50%, 0);
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  z-index: 2;
+}
+@media (max-width: 414px) {
+  #soln_wrap .scrollbar {
+    bottom: 70px;
+  }
+}
+@media (max-width: 375px) {
+  #soln_wrap .scrollbar {
+    bottom: 30px;
+  }
+}
+#soln_wrap .scrollbar a {
+  width: 45px;
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0043B7 !important;
+  transform: rotate(45deg);
+  animation: scrollDown 1.5s infinite;
+  margin: 0 auto;
+}
+@media (max-width: 1280px) {
+  #soln_wrap .scrollbar a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 414px) {
+  #soln_wrap .scrollbar a {
+    font-size: 14px;
+  }
+}
+#soln_wrap .scrollbar a img {
+  width: 25px;
+  margin: 5px 0 0;
+}
+@media (max-width: 1280px) {
+  #soln_wrap .scrollbar a img {
+    width: 18px;
+  }
+}
+@media (max-width: 414px) {
+  #soln_wrap .scrollbar a img {
+    width: 14px;
+  }
+}
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#contents {
+  padding: 0;
+}
+#contents #myVideo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=index.css.map */
