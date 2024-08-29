@@ -59,8 +59,13 @@
   top: 0;
   left: 0;
   transition: all 1s;
+  background:transparent;
 }
 #soln_wrap #header.fix {
+  background: #fff;
+  transition: background 1s;
+}
+#soln_wrap #header.active {
   background: #fff;
   transition: background 1s;
 }
