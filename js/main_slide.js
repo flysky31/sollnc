@@ -33,6 +33,19 @@ $(document).ready(function(){
           swiper: swiper,
         },
       });
+
+      //메인 영상 부분롤링
+      var swiper = new Swiper(".vertical_slide", {
+          direction: "vertical",    
+          autoHeight: true,
+            autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+            },
+          loop:true,
+          speed:1000,
+      });
+
 });
 
 
