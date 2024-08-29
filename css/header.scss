@@ -1,0 +1,300 @@
+@import "./mixin";
+
+
+
+#soln_wrap{
+    // max-width: 1920px;
+    margin: 0 auto;
+    #header{
+        overflow: hidden;
+        // max-width: 1920px;
+        position: fixed;
+        height: 100px;
+        width: 100%;
+        z-index: 1000;
+        min-width: 320px;
+        top:0;
+        left: 0;
+        transition: all 1s;
+        &.fix{
+            background: #fff;
+            transition: background 1s;
+            .navbar{
+                border-bottom: 1px solid $color_d;
+            }
+        }
+
+        .navbar {
+            height: 100px;
+            background: $color_w!important;
+            
+        }
+
+        .container-fluid{
+            // max-width: 90%;
+
+        }
+        .navbar-toggler{
+            border: 0!important;
+        }
+        .navbar-collapse{
+            li{
+                width: 150px;
+                text-align: center;
+                a{
+                    font-size: $font-nomal2;
+                    font-weight: $font-bolder;
+                    
+                    &:hover{
+                        color: $color_b!important;
+                    }
+                    &.highlight{
+                        color: $color_b!important;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+// footer
+#footer{
+    .foo_logo{
+        width: 160px;
+    }
+    .copyright{
+        background: $color_r;
+        color:$color_w;
+        font-weight: $font-bolder;
+        margin: 0;
+        padding: 10px 0;
+        font-size: $font-small;
+    }
+    .inner{
+        position: relative;
+        .sns_con{
+            position: absolute;
+            top: 30%;
+            right: 6px;
+            a{
+                margin: 0 5px 0 0;
+              
+            }
+        }
+        .address{
+            line-height: 2;
+            color: $color_g;
+            .g_line{
+                vertical-align: middle;
+                width: 2px;
+                height: 20px;
+                background: $color_d;
+                display: inline-block;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+//totop
+#totop {
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0043B7;
+    color: white;
+    cursor: pointer;
+   
+    border-radius: 4px;
+    transition: opacity .5s;
+}
+
+
+
+// 誘몃뵒�댁옘由�
+@include breakpoint_desktop_1280 {
+    #soln_wrap{
+        #header{
+            height: 70px;
+            .logo{
+                img{
+                    width: 120px;
+                }
+            }
+            .navbar{
+                height: 70px;
+            }
+            .navbar-collapse{
+                li{
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        #footer{
+            .address{
+                font-size: $font-small;
+            }
+        }
+    }
+}
+
+
+
+
+@include breakpoint_tablet_1024{
+    #soln_wrap{
+        #header{
+            height: 65px;
+            .logo{
+                img{
+                    width: 100px;
+                }
+            }
+            .navbar{
+                height: 65px;
+                background: $color_w!important;
+            }
+            .navbar-toggler{
+                box-shadow: none;
+                padding: 0;
+                .hamburger-menu{
+                    width: 30px;
+                    height: 22px;
+                    position: relative;
+                    display: block;
+                    cursor: pointer;
+                    span {
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        width: 100%;
+                        background-color: $color_b;
+                        transition: transform 0.3s ease;
+
+                        &:nth-child(1) {
+                            top: 0;
+                        }
+                        &:nth-child(2) {
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 70%;
+                            right: 0;
+                        }
+                        &:nth-child(3) {
+                            bottom: 0;
+                        }
+                    }
+                    &.active{
+                        span{
+                            &:nth-child(1) {
+                                transform: rotate(45deg) translate(6px, 5px);
+                            }
+                            &:nth-child(2) {
+                                opacity: 0;
+                            }
+                            &:nth-child(3) {
+                                transform: rotate(-45deg) translate(9px, -8px);
+                            }
+                        }
+                    }
+
+                }
+            }
+            .navbar-collapse{
+                li{
+                    width:130px;
+                }
+            }
+        }
+        #footer{
+            .d-block{
+                display: block!important;
+            }
+            .sns_con{
+                top: 22%;
+            }
+            .foo_logo{
+                img{
+                    width: 90px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+@include breakpoint_tablet_991{
+    #soln_wrap{
+        #header{
+            .navbar-collapse {
+                box-shadow: -11px 7px 7px rgba(200, 200, 200, 0.5);
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                background: rgb(255, 255, 255);
+                margin-top: 64px;
+                border-top: 1px solid $color_e;
+                li{
+                    width: auto;
+                }
+            }
+            .navbar-nav{
+                li{
+                    font-size: $font-nomal2;
+                    font-weight: $font-bold;
+                    margin: 10px 6%;
+                    border-bottom: 1px solid #eee;
+                    &:first-child{
+                        margin: 30px 6% 10px;
+                    }
+                    &:last-child{
+                        margin: 10px 6% 30px;
+                        border-bottom: 0;
+                    }
+                    a{
+                        padding: 8px 0 25px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@include breakpoint_tablet_768 {
+    #totop{
+        img{
+            width: 45px;
+        }
+    }
+}
+
+
+
+@include breakpoint_mobile_414 {
+    #soln_wrap{
+        #footer{
+            .address{
+                font-size: 12px;
+            }
+            .copyright{
+                font-size: 12px;
+            }
+        }
+    }
+
+}
