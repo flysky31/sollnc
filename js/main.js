@@ -1,22 +1,18 @@
 //main project tab
 function openTab(evt, tabName) {
-  // 紐⑤뱺 �� 踰꾪듉怨� �� 肄섑뀗痢� �붿냼瑜� 媛��몄샃�덈떎.
   var i, tabContent, tabButtons;
 
   tabContent = document.getElementsByClassName('tab-content');
   tabButtons = document.getElementsByClassName('tab-button');
 
-  // 紐⑤뱺 �� 肄섑뀗痢좊� �④퉩�덈떎.
   for (i = 0; i < tabContent.length; i++) {
     tabContent[i].style.display = 'none';
   }
 
-  // 紐⑤뱺 �� 踰꾪듉�� �쒖꽦�� �대옒�ㅻ� �쒓굅�⑸땲��.
   for (i = 0; i < tabButtons.length; i++) {
     tabButtons[i].className = tabButtons[i].className.replace(' active', '');
   }
 
-  // �좏깮�� �� 肄섑뀗痢좊� �쒖떆�섍퀬 踰꾪듉�� �쒖꽦�뷀빀�덈떎.
   document.getElementById(tabName).style.display = 'block';
   evt.currentTarget.className += ' active';
 
